@@ -1,0 +1,6 @@
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab10\lab10\bin\Debug\lab10.exe.config
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab10\lab10\obj\Debug\lab10.csprojResolveAssemblyReference.cache
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab10\lab10\bin\Debug\lab10.exe
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab10\lab10\bin\Debug\lab10.pdb
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab10\lab10\obj\Debug\lab10.exe
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab10\lab10\obj\Debug\lab10.pdb
