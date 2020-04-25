@@ -1,0 +1,6 @@
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab12\lab12\bin\Debug\lab12.exe.config
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab12\lab12\bin\Debug\lab12.exe
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab12\lab12\bin\Debug\lab12.pdb
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab12\lab12\obj\Debug\lab12.csprojResolveAssemblyReference.cache
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab12\lab12\obj\Debug\lab12.exe
+C:\Users\Никита Пестов\Documents\Visual Studio 2015\Projects\Cem6\lab12\lab12\obj\Debug\lab12.pdb
