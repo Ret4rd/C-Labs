@@ -12,33 +12,10 @@ namespace lab12
         {
             Console.WriteLine("Введите название файла");
             var path = Console.ReadLine();
-            char c = ' ';
-            char c1;
-            char[] punctuation = { '-','.','?','!',')','(',',',':','\t'};
             Dictionary<string, int> words = new Dictionary<string, int>();
-            StringBuilder word = new StringBuilder();
             try
             {
-                using (var fileStream = new StreamReader(Path.Combine(Environment.CurrentDirectory, path)))
-                {
-                    while (!fileStream.EndOfStream)
-                    {
-                        c1 = (char)fileStream.Read();
-                        if (punctuation.Contains(c1))
-                            c1 = ' ';
-                        if (c1 != ' ')
-                            word.Append(c1);
-                        if ((c1 == ' ' && c != ' ') || fileStream.EndOfStream)
-                        {
-                            if (words.ContainsKey(word.ToString()))
-                                words[word.ToString()]++;
-                            else
-                                words.Add(word.ToString(), 1);
-                            word.Clear();
-                        }
-                        c = c1;
-                    }
-                }
+                words = Methods.ReadFile(path);
             }
             catch (IOException e)
             {
@@ -52,15 +29,28 @@ namespace lab12
             }
             Console.WriteLine("Введите слово для поиска");
             var find = Console.ReadLine();
-            if (words.ContainsKey(find))
-                Console.WriteLine("Слово: " + find + " Повторений: " + words[find]);
-            else
-                Console.WriteLine("Такого слова нет");
+            //if (words.ContainsKey(find))
+            //    Console.WriteLine("Слово: " + find + " Повторений: " + words[find]);
+            //else
+            //    Console.WriteLine("Такого слова нет");
+            Console.WriteLine("Слово: " + find + " Повторений: " + Methods.FindWord(words, find));
 
             Console.WriteLine("Самое часто встречающееся слово");
-            Console.WriteLine("Слово: " + words.Aggregate((x, y) => 
-            x.Value > y.Value ? x : y).Key + " Повторений: " + words.Values.Max());
-            Console.ReadKey();
+            Dictionary<string, int> oftenWord = new Dictionary<string, int>();
+            try
+            {
+                oftenWord = Methods.OftenWord(words);
+                Console.WriteLine("Слово: " + oftenWord.First().Key + " Повторений: " + oftenWord.First().Value);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
+            finally
+            {
+                Console.ReadKey();
+            }
         }
     }
 }
